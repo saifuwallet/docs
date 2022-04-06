@@ -18,14 +18,23 @@ If all worked fine, Saifu should load successfully
 
 Inside the saifu folder, navigate to the folder `plugins`, or create it if it doesn't exist yet. 
 
-Create a new sub-folder with your plugin name and copy the contents of your built plugin bundle (manifest.json + main.js)
+Create a new sub-folder with your plugin name and copy the contents of your built plugin bundle (metadata.json + main.js)
 
-![](attachments/Screen%20Shot%202022-03-31%20at%2012.16.30.png)
+![](attachments/plugin-structure.png)
 
 On next open, Saifu will attempt to load your custom bundle. Navigate to the plugin settings and enable it
 
 ![](attachments/Screen%20Shot%202022-03-31%20at%2012.18.05.png)
 
+**Note:** Saifu will auto-reload plugins on change, no need to manually refresh the tab
+
 ### Hints:
-- Symlink or setup your plugin environment to automatically generate these files and put them into the right place
 - Inject sourcemaps into the bundle for easier development 
+- Symlink or setup your plugin environment to automatically generate these files and put them into the right place
+
+On mac, an easy way to do this is to use fswatch to copy files from the `dist/` folder into the correct location:
+```
+fswatch  . | xargs -n1 -I{} cp {} /path/to/saifu/plugins/myplugin/
+```
+
+
