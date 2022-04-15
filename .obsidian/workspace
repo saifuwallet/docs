@@ -90,7 +90,10 @@
   "active": "283299028993c251",
   "lastOpenFiles": [
     "How to load external plugins for development.md",
-    "README.md",
+    "attachments/plugin-directory-structure.png",
+    "attachments/unbundled-plugin-toggle.png",
+    "attachments/unbundled-plugin-success.png",
+    "attachments/brave-top.png",
     "README.md"
   ]
 }
