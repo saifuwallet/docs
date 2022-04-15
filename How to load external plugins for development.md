@@ -1,10 +1,10 @@
 # How to load external plugins for development
 🚧 The plugin system is changing rapidly, this page might not be up to date 🚧 
 
-**Note:** Due to sandbox restrictions this will only work in Chrome
+**Note:** Due to sandbox restrictions this will only work in Chrome non-webstore builds (for now)
 
 ## Preparing Saifu
-1. Download the latest chrome dev build (coming soon)
+1. Download the latest non-webstore [chrome release](https://github.com/saifuwallet/saifu-releases/releases)
 2. Navigate to your browsers extension settings and enable 'Developer mode' in the top right corner
 ![](attachments/Screen%20Shot%202022-03-31%20at%2012.13.14.png)
 3. Click 'Load unpacked' 
